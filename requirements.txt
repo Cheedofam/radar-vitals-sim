@@ -1,0 +1,14 @@
+# radar-vitals-sim dependencies (per RADAR_SIM_SPEC.md Section 3)
+# Python 3.10+ — 100% free/open-source.
+numpy              # physics/signal math
+scipy              # scipy.signal: filtering, FFT, phase unwrap
+scikit-learn       # pathology classifier (SVM / Random Forest)
+matplotlib         # range-Doppler maps, I/Q constellation, waveforms
+pytest             # unit tests (CW round-trip physics validation)
+
+# radarsimpy — OPTIONAL radar simulator. Not distributed as a plain PyPI wheel; it
+# needs platform-specific prebuilt binaries (or a build step) and is not required for
+# this project's scope. Per spec Section 3, if install issues arise, fall back to
+# hand-rolled phase-modulation math in NumPy, which is scientifically equivalent here.
+# That is the path this repo takes by default — see PLAN.md risk #1.
+# radarsimpy
