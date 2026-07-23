@@ -120,6 +120,11 @@ ordinary webcam using remote photoplethysmography. Together they cover optical a
 approaches to the same contactless vital-signs problem; the radar path is robust to lighting
 and works in the dark and through clothing.
 
+A third, **event/neuromorphic-camera** direction is sketched in that project's design note
+(`rppg-vitals/docs/event_based_vitals_design.md`): why colour rPPG is sub-threshold on a DVS,
+the pivot to motion-based sensing, and a simulation-first validation path — the same
+simulate-then-hardware philosophy this radar project follows.
+
 ## Acknowledgements
 
 - Microwave Doppler-radar vital-signs background: Droitcour (Stanford, 2006); Li & Lin
